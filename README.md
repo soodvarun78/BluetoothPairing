@@ -2,9 +2,10 @@
 Sample Code for Bluetooth Paring and Connect
 
 Dependencies
-GLib2 
-BlueAlsa
-GDBUS
+GLib2, 
+BlueAlsa,
+GDBUS,
+Bluez5
 
 How to compile 
 
