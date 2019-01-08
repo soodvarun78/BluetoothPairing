@@ -567,7 +567,8 @@ int main(int argc, char *argv[]) {
 	conn =	g_dbus_connection_new_for_address_sync(address,
                                         G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_CLIENT |
                                         G_DBUS_CONNECTION_FLAGS_MESSAGE_BUS_CONNECTION,
-                                        NULL, NULL, &err); {
+                                        NULL, NULL, &err); 
+	if(conn == NULL){
 		printf("err %p \n",err);
                 printf("Couldn't obtain D-Bus connection: %s\n",err?err->message:"NULL");
                 return -1;
