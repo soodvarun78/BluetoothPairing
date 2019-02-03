@@ -14,8 +14,8 @@ gcc -g -o ble_pairing.out ble_pairing.c $(pkg-config --cflags --libs glib-2.0 gi
 How to run 
 
 For pairing
-.
-/ble_pairing.out pair
+
+./ble_pairing.out pair
 
 For connect
 
